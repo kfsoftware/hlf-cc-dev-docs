@@ -9,7 +9,7 @@ const config = {
   title: 'HLF Chaincode development',
   tagline: 'Chaincode development environment',
   url: "https://kfsoftware.github.io",
-  baseUrl: '/hlf-cc-dev/',
+  baseUrl: '/hlf-cc-dev-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
