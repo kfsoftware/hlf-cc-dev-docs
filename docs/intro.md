@@ -4,11 +4,19 @@ sidebar_position: 1
 
 # Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
+## What's `hlf-cc-dev`?
 
 `hlf-cc-dev` is a tool to start developing a new chaincode from your development environment.
+
+### Why does this tool exist?
+
+When developing chaincodes, we need to have an HLF network deployed, usually in our development environment, which is hard for new developers to get started since they need to know how to deploy an HLF network.
+
+This tool aims to ease the onboarding of new developers that are not familiar with the internals of the HLF network but are interested in developing chaincodes.
+
+The only requirement is that the developer has access to a working HLF network, this network can be set up by Administrators that are used to perform these operations, so the developer doesn't need to.
+
+With this tool, instead of installing the chaincode in the peers, approving the chaincode definition, and finally, committing the chaincode, the developer can have the chaincode started in its machine, and with one command, it can install, approve and commit the chaincode in one go. If the developer needs to modify the chaincode logic, all it needs to do is restart the chaincode program running in its machine, just like any other application the developer is used to developing.
 
 ### What you'll need
 
@@ -25,13 +33,13 @@ The following diagram explains the architecture of the final solution
 
 ## Steps to get started
 
-To start the server you need the network config with the admin users for each orga
+To start the server, you need the network config with the admin users for each organization.
 
 ```bash
 hlf-cc-dev serve --address ":8080" --metrics-address ":8081" --config "<PATH_TO_NETWORK_CONFIG>"
 ```
 
-## Start development on your local environment
+## Start development in your local environment
 
 ```bash
 CHAINCODE_NAME=chaincode1
